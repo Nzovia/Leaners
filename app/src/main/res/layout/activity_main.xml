@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <ListView
+      android:id="@+id/listview"
+      android:layout_width="match_parent"
+      android:layout_height="fill_parent"
+      android:layout_below="@id/searchView"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="20dp"
+      />
+  <SearchView
+      android:id="@+id/searchView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:queryHint="Search Here"
+      android:divider="@color/colorPrimaryDark"
+      android:dividerHeight="2dp"
+      android:iconifiedByDefault="false"
+      android:layout_alignParentTop="true"
+      />
+
+  <WebView
+      android:id="@+id/webView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignRight="@id/listview"
+      android:layout_below="@id/listview"
+      />
+
+</RelativeLayout>

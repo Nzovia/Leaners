@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContactActivity">
+
+  <!--  <LinearLayout
+        android:id="@+id/imageHolder"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+         </LinearLayout>
+
+-->
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded"
+            android:src="@drawable/ic_camera_alt"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    <TextView
+    android:id="@+id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/image1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:text="Contact Information"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:entries="@array/options_array"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="8dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edittext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded"/>
+
+        <EditText
+            android:id="@+id/edittext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Company"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded"/>
+        <EditText
+            android:id="@+id/edittext3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded"/>
+        <EditText
+            android:id="@+id/edittext4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded"/>
+        <EditText
+            android:id="@+id/edittext5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded"/>
+        <EditText
+            android:id="@+id/edittext6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Relationship"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
